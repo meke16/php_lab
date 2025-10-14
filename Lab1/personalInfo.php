@@ -209,7 +209,7 @@ if (isset($_POST['submit'])) {
     </div>
     <div class="div2">
         <h1 class="test">Test For New Student</h1>
-        <form action="" method="POST">
+        <form action="" method="POST" autocomplete="off">
             <label for="">
                 Student Full Name:
                 <input name="name" placeholder="John Doe" type="text"  required>
@@ -225,7 +225,7 @@ if (isset($_POST['submit'])) {
                 <select name="department" required>
                     <option value="">Select Department</option>
                     <?php foreach ($departments as $dep): ?>
-                        <option value="<?= $dep ?>"><?= isset($department) ? $department : $dep ?></option>
+                        <option value="<?= $dep ?>" <?= ($department == $dep) ? 'selected' : '' ?>><?= $dep ?></option>
                     <?php endforeach; ?>
                 </select>
             </label>
@@ -235,7 +235,7 @@ if (isset($_POST['submit'])) {
                     <option value="">Select Year</option>
                     <?php $years = range(1, 7); ?>
                     <?php foreach ($years as $yr): ?>
-                        <option value="<?= $yr ?>"><?= isset($year) ? $year : $yr ?></option>
+                        <option value="<?= $yr ?>" <?= ($year == $yr) ? 'selected' : '' ?>><?= $yr ?></option>
                     <?php endforeach; ?>
                 </select>
 
