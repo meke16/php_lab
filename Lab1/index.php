@@ -19,7 +19,6 @@ if (array_key_exists($url, $paths)) {
     echo "<h2 style='color:#d9534f; text-align:center;'>Lab-2 does not contain exercise-2 😅</h2>";
 } else {
     // Custom 404 page
-    http_response_code(404);
     echo "
     <div style='
         font-family: Arial, sans-serif;

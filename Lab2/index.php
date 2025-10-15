@@ -15,11 +15,12 @@ $paths = [
 
 if (array_key_exists($url, $paths)) {
     require $paths[$url];
-} elseif ($url == '/exersice-2') {
-    echo "<h2 style='color:#d9534f; text-align:center;'>Lab-2 does not contain exercise-2 😅</h2>";
 } else {
-    // Custom 404 page
-    http_response_code(404);
+
+    if ($url == '/exersice-2') {
+        echo "<h2 style='color:#d9534f; text-align:center;'>Lab-2 does not contain exercise-2 😅</h2>";
+    }
+    //custom 404 page
     echo "
     <div style='
         font-family: Arial, sans-serif;
@@ -59,4 +60,3 @@ if (array_key_exists($url, $paths)) {
     </div>
     ";
 }
-?>
