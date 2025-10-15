@@ -212,12 +212,12 @@ if (isset($_POST['submit'])) {
         <form action="" method="POST" autocomplete="off">
             <label for="">
                 Student Full Name:
-                <input name="name" placeholder="John Doe" type="text"  required>
+                <input value="<?= ($fullName) ? $fullName : '' ?>"  name="name" placeholder="John Doe" type="text"  required>
 
             </label>
             <label for="">
                 ID Number:
-                <input name="idNumber" placeholder="0000/16" type="text" required>
+                <input value="<?= ($idNumber) ? $idNumber : '' ?>" name="idNumber" placeholder="0000/16" type="text" required>
 
             </label>
             <label for="">
