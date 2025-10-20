@@ -91,11 +91,12 @@ if(isset($_POST['convert'])) {
             background-color: #09242cff;
             color: #fff;
             font-size: 19px;
+            cursor: pointer;
         }
         .char {
             margin-top: 18px;
             margin-bottom: 5px;
-            color: #dd8022ff;
+            color: #000000ff;
             font-weight: bold;
             font-size: 20px;
         }
@@ -132,7 +133,7 @@ if(isset($_POST['convert'])) {
                     <option value="toLower">to lowercase</option>
                 </select>
                 <button name="convert" type="submit">convert</button>
-                  <p class="char"><?= strlen($word) > 0 ? "Result: $word" : '' ?></p>
+                  <p class="char"><?= strlen($word) > 0 ? "Result: <span style='color: #fff'>$word</span>" : '' ?></p>
             </form>
         </div>
         

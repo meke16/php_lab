@@ -29,7 +29,7 @@ if (isset($_POST['remove'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Elements</title>
+    <title>Remove Last Element Of Array</title>
     <style>
         * {
             padding: 0;
@@ -131,13 +131,13 @@ if (isset($_POST['remove'])) {
 <body>
     <div class="container">
         <div class="header">
-            <h1>Remove Element from Last Of Array</h1>
+            <h1>Remove Last Element Of Array</h1>
         </div>
 
         <div class="form">
             <form autocomplete="off" action="" method="POST">
                 <h3>User Inputs</h3>
-                <button type="submit" name="reset">Reset Array</button>
+                <button type="submit" name="reset">Reset Array to predifined &circlearrowleft;</button>
                 <button type="submit" name="remove">Remove Last Element</button>
             </form>
             <p class="char">

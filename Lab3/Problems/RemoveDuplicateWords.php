@@ -83,6 +83,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
             background-color: #09242cff;
             color: #fff;
             font-size: 19px;
+            cursor: pointer;
         }
         .char {
             margin-top: 4px;
@@ -131,7 +132,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         
         <div class="footer">
-            <p class="footer-p">Remove Duplicate Words in php</p>
+            <p class="footer-p">Remove Duplicate Words from sentences in php</p>
         </div>
     </div>
 </body>

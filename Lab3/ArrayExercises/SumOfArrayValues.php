@@ -7,7 +7,7 @@ function dd($par)
     }
 }
 
-$arr = range(10, 50);
+$arr = range(1, 50);
 ?>
 
 <!DOCTYPE html>
@@ -73,18 +73,18 @@ $arr = range(10, 50);
         }
 
         button {
-            margin: 15px 15px;
             padding: 8px 30px;
             border: none;
             border-radius: 10px;
             background-color: #09242cff;
             color: #fff;
             font-size: 19px;
+            cursor: pointer;
         }
 
         .char {
             margin-bottom: 20px;
-            color: #f1e9e9ff;
+            color: #000000ff;
             font-weight: bold;
             font-size: 25px;
         }
@@ -121,7 +121,7 @@ $arr = range(10, 50);
                 <button name="sum">Sum arrays</button>
                   <h3> <?= (isset($_POST['sum']) ? "Sum Of Array:" . array_sum($arr) : '') ?></h3>
 
-                    <p>array: <?= dd($arr) ?></p>
+                    <p class="char">array: <?= dd($arr) ?></p>
 
             </form>
 

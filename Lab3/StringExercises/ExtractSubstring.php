@@ -102,6 +102,7 @@ if (isset($_POST['extract'])) {
             background-color: #09242cff;
             color: #fff;
             font-size: 19px;
+            cursor: pointer;
         }
 
         .result {
@@ -150,7 +151,7 @@ if (isset($_POST['extract'])) {
                 <button name="extract" type="submit">Replace</button>
                 <?php if (!empty($input)) : ?>
                     <div class="result">
-                        <p><?= "Input was <span style='color: #16acd1ff'>$input</span>"  ?></p>
+                        <p><?= "Input was <span style='color: #000000ff'>$input</span>"  ?></p>
                         <p><?= "Extracted word <span style='color: #0a0909ff'>$result</span>"  ?></p>
                     </div>
                 <?php endif; ?>

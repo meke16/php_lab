@@ -3,23 +3,26 @@
 function dd($par)
 {
     foreach ($par as $x) {
-        echo $x ." ";
+        echo $x . " ";
     }
 }
 $arr = range(10, 50);
 $filterd = [];
 $to = '';
-if(isset($_POST['even'])) {
+if(isset($_POST['back'])) {
+    $filterd = [];
+}
+if (isset($_POST['even'])) {
     $to = "filtered to even";
-$filterd = array_filter($arr, function ($value) {
-    return $value % 2 == 0;
-}); 
-} else if(isset($_POST['odd'])) {
-        $to = "filtered to odd";
+    $filterd = array_filter($arr, function ($value) {
+        return $value % 2 == 0;
+    });
+} else if (isset($_POST['odd'])) {
+    $to = "filtered to odd";
 
-   $filterd = array_filter($arr, function ($value) {
-    return $value % 2 != 0;
-});  
+    $filterd = array_filter($arr, function ($value) {
+        return $value % 2 != 0;
+    });
 }
 ?>
 
@@ -93,6 +96,7 @@ $filterd = array_filter($arr, function ($value) {
             background-color: #09242cff;
             color: #fff;
             font-size: 19px;
+            cursor: pointer;
         }
 
         .char {
@@ -119,6 +123,7 @@ $filterd = array_filter($arr, function ($value) {
             font-family: 'Courier New', Courier, monospace;
             color: #6d6666ff
         }
+
         .res {
             display: flex;
             flex-direction: column;
@@ -136,16 +141,17 @@ $filterd = array_filter($arr, function ($value) {
             <form autocomplete="off" action="" method="POST">
                 <button name="even">Filter even</button>
                 <button name="odd">Filter odd</button>
+                 <button name="back">Back.. &circlearrowleft;</button>
 
                 <div class="res">
-                <p class="char">
-                    Original array <br>
-                     <?= dd($arr) ?>
+                    <p class="char">
+                        Original array <br>
+                        <?= dd($arr) ?>
                     </p>
-                <p class="char"> 
-                      <?= $to; ?> <br>
-                    <?= dd($filterd) ?>
-                </p>
+                    <p class="char">
+                        <?= $to; ?> <br>
+                        <?= dd($filterd) ?>
+                    </p>
                 </div>
             </form>
 

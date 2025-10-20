@@ -8,9 +8,9 @@ function dd($par)
 }
 function dd2($par)
 {
-    foreach ($par as $x => $y) {
-        echo $x . "=>" . $y . "<br>";
-    }
+    echo "<pre>";
+    var_dump($par);
+    echo "</pre>";
 }
 $input = '';
 $result = 0;
@@ -96,6 +96,7 @@ if (isset($_POST['combine'])) {
             background-color: #09242cff;
             color: #fff;
             font-size: 19px;
+            cursor: pointer;
         }
 
         .char {

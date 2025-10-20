@@ -73,6 +73,7 @@ if(isset($_POST['count'])) {
             background-color: #09242cff;
             color: #fff;
             font-size: 19px;
+            cursor: pointer;
         }
         .char {
             margin-top: 4px;

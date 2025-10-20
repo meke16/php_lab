@@ -74,16 +74,11 @@ if(!empty($_POST['input'])) {
             background-color: #09242cff;
             color: #fff;
             font-size: 19px;
+            cursor: pointer;
         }
         .char {
             margin-top: 4px;
             color: #0a0909ff;
-            font-weight: bold;
-            font-size: 25px;
-        }
-        .res {
-            margin-top: 4px;
-            color: #eca12fff;
             font-weight: bold;
             font-size: 25px;
         }
@@ -116,7 +111,7 @@ if(!empty($_POST['input'])) {
                 <input placeholder="strings..." name="input" type="text">
                 <button type="submit" name="reverse">Reverse</button>
             </form>
-            <p class="char"><?= strlen($input) > 0 ?  "Input String: <span style='color: #1215d6a8'>$input</span>" : '' ?></p>
+            <p class="char"><?= strlen($input) > 0 ?  "Input String: <span style='color: #ededf7a8'>$input</span>" : '' ?></p>
              <p class="char"><?= strlen($input) > 0 ?  "Reversed String: ". "<span style='color: #fff'>" . strrev($input) . "</span>" : ''  ?></p>
         </div>
         

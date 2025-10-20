@@ -126,7 +126,7 @@ if(isset($_POST['find'])) {
                 <input value="" placeholder="strings..." name="strings" type="text" required>
                 <input value="" placeholder="find substring..." name="substring" type="text" required>
                 <button name="find" type="submit">Find Position</button>
-                  <p class="char"><?= strlen($strings) > 0 ? "position of " .$subString. " in " . $strings. " is " .$positionOfSubstring : '' ?></p>
+                  <p class="char"><?= strlen($strings) > 0 ? "position of " ."<span style='color: #fff'>$subString</span>". " in " . "<span style='color: #fff'>$strings</span>". " is " ."<span style='color: #fff'>$positionOfSubstring</span>" : '' ?></p>
             </form>
         </div>
         

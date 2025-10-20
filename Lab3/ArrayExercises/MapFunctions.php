@@ -9,6 +9,9 @@ function dd($par)
 $arr = range(10, 20);
 $mapped = [];
 $to = '';
+if(isset($_POST['back'])) {
+    $mapped = [];
+}
 if(isset($_POST['square'])) {
     $to = "array to square";
     $mapped = array_map(function ($value) {
@@ -95,6 +98,7 @@ if(isset($_POST['square'])) {
             background-color: #09242cff;
             color: #fff;
             font-size: 19px;
+            cursor: pointer;
         }
 
         .char {
@@ -138,6 +142,7 @@ if(isset($_POST['square'])) {
             <form autocomplete="off" action="" method="POST">
                 <button name="square">make array Square</button>
                 <button name="cube">make array cube</button>
+                 <button name="back">Back.. &circlearrowleft;</button>
                 <div class="res">
                 <p class="char">
                     Original array <br>

@@ -10,10 +10,10 @@ if (isset($_POST['check'])) {
     $word = $_POST['word'];
 
     if(isset($_POST['condition']) && $_POST['condition'] == 'start') {
-        $condition="You are checking If Input is Starts With $word";
+        $condition="You are checking If Input is Starts With <span style='color: #fff;'>$word</span>";
         $result = str_starts_with($input,$word);
     } elseif(isset($_POST['condition']) && $_POST['condition'] == 'end') {
-         $condition="You are checking If Input is Ends With $word";
+         $condition="You are checking If Input is Ends With <span style='color: #fff;'>$word</span>";
         $result = str_ends_with($input,$word);
     }
 
@@ -81,8 +81,9 @@ if (isset($_POST['check'])) {
             text-align: center;
             font-size: 20px;
             color: #fff;
+            cursor: pointer;
         }
-                select {
+        select {
             margin-left: 5px;
             padding: 10px 25px;
             border: none;
@@ -90,6 +91,7 @@ if (isset($_POST['check'])) {
             background-color: #09242cff;
             color: #fff;
             font-size: 15px;
+            cursor: pointer;
         }
 
         button {
@@ -100,6 +102,7 @@ if (isset($_POST['check'])) {
             background-color: #09242cff;
             color: #fff;
             font-size: 19px;
+            cursor: pointer;
         }
 
         .char {

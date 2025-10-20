@@ -88,6 +88,7 @@ if (isset($_POST['go'])) {
             background-color: #09242cff;
             color: #f8f1f1ff;
             font-size: 19px;
+            cursor: pointer;
         }
 
         .char {
@@ -127,8 +128,10 @@ if (isset($_POST['go'])) {
         <div class="form">
             <form autocomplete="off" action="" method="POST">
                 <h3>User Inputs</h3>
+                <p>hint:make same separator when you input on string and input on separator field</p>
+                <p></p>
                 <input style="width: 400px;" placeholder="input..." name="input" type="text" required>
-                <input placeholder="choose separator..." name="sep" type="text" required>
+                <input placeholder="separator..." name="sep" type="text" required>
                 <button type="submit" name="go">Go...</button>
             </form>
             <div class="char">

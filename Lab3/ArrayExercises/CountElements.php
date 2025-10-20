@@ -75,6 +75,7 @@ if (isset($_POST['count'])) {
             text-align: center;
             font-size: 20px;
             color: #fff;
+            cursor: pointer;
         }
 
         button {
@@ -85,6 +86,7 @@ if (isset($_POST['count'])) {
             background-color: #09242cff;
             color: #fff;
             font-size: 19px;
+            cursor: pointer;
         }
 
         .char {
@@ -96,7 +98,7 @@ if (isset($_POST['count'])) {
 
         .res {
             margin-top: 4px;
-            color: #e8f1efff;
+            color: #0cffcabe;
             font-weight: bold;
             font-size: 25px;
         }
@@ -137,7 +139,7 @@ if (isset($_POST['count'])) {
                     <?= dd($arr) ?>
                 </p>
             <?php endif; ?>
-            <p class="res"><?= strlen($input) > 0 ? "Elemnt count:" . count($arr) : '' ?></p>
+            <p class="res"><?= strlen($input) > 0 ? "Element count:" . count($arr) : '' ?></p>
         </div>
 
         <div class="footer">

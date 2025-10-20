@@ -10,7 +10,7 @@ $input = '';
 $result = 0;
 $arr = ["apple", "lemon", "watermellon","banana","pinapple","orange"];
 if (isset($_POST['check'])) {
-    $input = $_POST['input'];
+    $input = strtolower(($_POST['input']));
     $result = in_array($input, $arr);
 }
 
@@ -86,6 +86,7 @@ if (isset($_POST['check'])) {
             background-color: #09242cff;
             color: #fff;
             font-size: 19px;
+            cursor: pointer;
         }
 
         .char {
@@ -95,12 +96,6 @@ if (isset($_POST['check'])) {
             font-size: 25px;
         }
 
-        .res {
-            margin-top: 4px;
-            color: #e8f1efff;
-            font-weight: bold;
-            font-size: 25px;
-        }
 
         .footer {
             margin-top: auto;

@@ -1,7 +1,7 @@
 <?php
 
 $input = '';
-if (!empty($_POST['input'])) {
+if (isset($_POST['remove'])) {
     $input = $_POST['input'];
 }
 
@@ -121,10 +121,10 @@ if (!empty($_POST['input'])) {
             <form autocomplete="off" action="" method="POST">
                 <h3>User Inputs</h3>
                 <input placeholder="input..." name="input" type="text">
-                <button type="submit" name="reverse">Reverse</button>
+                <button type="submit" name="remove">Remove</button>
             </form>
-            <p class="char"><?= strlen($input) > 0 ?  "Input: <span style='color: #1215d6a8'>$input</span>" : '' ?></p>
-            <p class="char"><?= strlen($input) > 0 ?  "Resilt: " . "<span style='color: #fff'>" . trim($input) . "</span>" : ''  ?></p>
+            <p class="char"><?= strlen($input) > 0 ?  "Input" . var_dump($input) : '' ?></p>
+            <p class="char"><?= strlen($input) > 0 ?  "Result" .var_dump(trim($input)): ''  ?></p>
         </div>
 
         <div class="footer">

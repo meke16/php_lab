@@ -14,6 +14,8 @@ foreach($sent as $x) {
     foreach($sent as $y) {
         if(strlen($x) > strlen($y)) {
             $longest = $x;
+        } else {
+              $longest = $x;
         }
     }
 }
@@ -86,6 +88,7 @@ foreach($sent as $x) {
             background-color: #09242cff;
             color: #fff;
             font-size: 19px;
+            cursor: pointer;
         }
         .char {
             margin-top: 4px;

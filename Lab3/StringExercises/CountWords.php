@@ -74,17 +74,12 @@ if(!empty($_POST['input'])) {
             background-color: #09242cff;
             color: #fff;
             font-size: 19px;
+            cursor: pointer;
         }
         .char {
             margin-top: 4px;
-            color: #0a0909ff;
-            font-weight: bold;
-            font-size: 25px;
-        }
-        .res {
-            margin-top: 4px;
-            color: #e8f1efff;
-            font-weight: bold;
+            color: #fff8f8ff;
+            font-weight: 900px;
             font-size: 25px;
         }
         .footer {
@@ -116,8 +111,8 @@ if(!empty($_POST['input'])) {
                 <input placeholder="your inputs.." name="input" type="text">
                 <button type="submit" name="count">Count</button>
             </form>
-            <p class="char"><?= strlen($input) > 0 ?  "Input: $input" : '' ?></p>
-             <p class="res"><?= strlen($input) > 0 ? "Word count from input:" . str_word_count($input) : '' ?></p>
+            <p class="char"><?= strlen($input) > 0 ?  "Input:" . "<span style='color: #000000ff'>$input</span>" : '' ?></p>
+             <p class="char"><?= strlen($input) > 0 ? "Word count from input:" . "<span style='color: #000000ff'>".str_word_count($input)."</span>" : '' ?></p>
         </div>
         
         <div class="footer">

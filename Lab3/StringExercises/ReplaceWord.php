@@ -103,13 +103,14 @@ if (isset($_POST['replaceWord'])) {
             background-color: #09242cff;
             color: #fff;
             font-size: 19px;
+            cursor: pointer;
         }
 
         .result {
             margin-top: 18px;
             margin-bottom: 5px;
-            color: #f1f7f2ff;
-            font-weight: bold;
+            color: #ffffffff;
+            font-weight: 700px;
             font-size: 20px;
         }
 
@@ -151,8 +152,8 @@ if (isset($_POST['replaceWord'])) {
                 <button name="replaceWord" type="submit">Replace</button>
                 <?php if (!empty($input)) : ?>
                     <div class="result">
-                        <p><?= "your input was <span style='color: #9898a8ff'>$input</span> "; ?></p>
-                        <p><?= "you replaced the word <span style='color: #f50e0eff'>$replaced</span> from input by <span style='color: #10f32eff'>$replace</span>" ?></p>
+                        <p><?= "your input was <span style='color: #000000ff'>$input</span> "; ?></p>
+                        <p><?= "you replaced the word <span style='color: #030101ff'>$replaced</span> from input by <span style='color: #000000ff'>$replace</span>" ?></p>
                         <p><?= "end result will be <span style='color: #0a0909ff'>$result</span>"  ?></p>
                     </div>
                 <?php endif; ?>

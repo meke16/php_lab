@@ -88,6 +88,7 @@ if (isset($_POST['reverse'])) {
             background-color: #09242cff;
             color: #fff;
             font-size: 14px;
+            cursor: pointer;
         }
 
         .char {

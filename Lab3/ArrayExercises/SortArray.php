@@ -10,7 +10,7 @@ $input = '';
 $head = "Before sorted";
 $arr = ["apple", "lemon", "watermellon", "banana", "ornage", "pinapple"];
 if (isset($_POST['reset'])) {
-    $arr =  ["apple", "lemon", "watermellon", "banana", "ornage", "pinapple"];
+    $arr =  $arr;
 }
 if (isset($_POST['sort'])) {
     sort($arr);
@@ -89,6 +89,7 @@ if (isset($_POST['sort'])) {
             background-color: #09242cff;
             color: #fff;
             font-size: 19px;
+            cursor: pointer;
         }
 
         .char {
