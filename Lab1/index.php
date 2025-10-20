@@ -4,19 +4,17 @@ $url = $_SERVER['REQUEST_URI'];
 
 $paths = [
     '/' => 'intro.php',
-    '/exersice-1' => 'hello.php',
-    '/exersice-2' => 'intro.php',
-    '/exersice-3' => 'personalInfo.php',
-    '/exersice-4' => 'serverInfo.php',
-    '/exersice-5' => 'comment.php',
+    '/exercise-1' => 'hello.php',
+    '/exercise-2' => 'intro.php',
+    '/exercise-3' => 'personalInfo.php',
+    '/exercise-4' => 'serverInfo.php',
+    '/exercise-5' => 'comment.php',
     '/miniProject' => 'miniProject.php',
 
 ];
 
 if (array_key_exists($url, $paths)) {
     require $paths[$url];
-} elseif ($url == '/exersice-2') {
-    echo "<h2 style='color:#d9534f; text-align:center;'>Lab-2 does not contain exercise-2 😅</h2>";
 } else {
     // Custom 404 page
     echo "

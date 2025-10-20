@@ -4,11 +4,11 @@
 $url = $_SERVER['REQUEST_URI'];
 
 $paths = [
-    '/exersice-1' => 'variables.php',
-    '/exersice-3' => 'conditional.php',
-    '/exersice-4' => 'switch.php',
-    '/exersice-5' => 'loops.php',
-    '/exersice-6' => 'functions.php',
+    '/exercise-1' => 'variables.php',
+    '/exercise-3' => 'conditional.php',
+    '/exercise-4' => 'switch.php',
+    '/exercise-5' => 'loops.php',
+    '/exercise-6' => 'functions.php',
     '/calculator' => 'calculator.php',
     '/fizzbuzz' => 'fizzbuzz.php',
 ];

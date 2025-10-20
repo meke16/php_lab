@@ -98,11 +98,11 @@
     </div>
     <div class="div2">
         <h1 class="nav">Naviagtion</h1>
-        <a href="/exersice-1" title="Exersice 1">Exersice 1</a>
-        <a href="/exersice-2" title="Exersice 2">Exersice 2</a>
-        <a href="/exersice-3" title="Exersice 3">Exersice 3</a>
-        <a href="/exersice-4" title="Exersice 4">Exersice 4</a>
-        <a href="/exersice-5" title="Exersice 5">Exersice 5</a>
+        <a href="/exercise-1" title="Exersice 1">Exersice 1</a>
+        <a href="/exercise-2" title="Exersice 2">Exersice 2</a>
+        <a href="/exercise-3" title="Exersice 3">Exersice 3</a>
+        <a href="/exercise-4" title="Exersice 4">Exersice 4</a>
+        <a href="/exercise-5" title="Exersice 5">Exersice 5</a>
         <a href="/miniProject" title="Mini Project">Mini Project</a>
     </div>
     <div class="div3">
